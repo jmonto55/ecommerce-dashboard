@@ -2,7 +2,6 @@
 
 import { useStoreModal } from "@/hooks/use-store-modal";
 import { useEffect } from "react";
-import { isObjectBindingPattern } from "typescript";
 
 const SetupPage = () => {
   const onOpen = useStoreModal((state) => state.onOpen);
@@ -13,6 +12,7 @@ const SetupPage = () => {
       onOpen();
     }
   }, [isOpen, onOpen]);
+
   return (
     <div className="p-4">
        Root Page
